@@ -1,0 +1,92 @@
+body {
+    color: #fff;
+    font-size: 100pt;
+}
+
+.section1 {
+    background-color: #11181e;
+    width: 75%;
+    float: left;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section2 {
+    background-color: #f1c40f;
+    width: 25%;
+    float: left;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section3 {
+    background-color: hsl(0deg 31% 73% / 90%);
+    width: 25%;
+    float: left;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section4 {
+    background-color: #f07bb2;
+    width: 30%;
+    float: left;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section5 {
+    background-color: #d70ff1;
+    width: 70%;
+    float: left;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section6 {
+    background-color: #4dcde4;
+    width: 50%;
+    float: left;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section6-2 {
+    background-color: #4d69e4;
+    width: 50%;
+    float: left;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.quote-text {
+
+    margin-top: 2.5em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.quote-author {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+}
+
