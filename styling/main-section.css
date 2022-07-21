@@ -1,0 +1,35 @@
+.name-intro{}
+
+.name-title {
+    width: 15ch;
+    animation: typing 3s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+    margin-top: 15rem;
+    margin-left: 2rem;
+  }
+  .name-title2 {
+    width: 31ch;
+    animation: typing 3s steps(31), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+    margin-left: 8rem;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

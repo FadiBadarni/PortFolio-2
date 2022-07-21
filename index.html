@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styling/main.css">
+    <link rel="stylesheet" href="styling/navigationBar.css">
+    <link rel="stylesheet" href="styling/main-section.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -16,18 +18,41 @@
 </head>
 
 <body>
-    <nav style="text-align: center; background-color: blueviolet;"><b style="font-size: 20px;">Navigation Bar</b></nav>
-    <div class="section1" style="font-weight: 600; color: white; font-size: 40px; text-align: center;">
-        <test style="font-size: 100px; position: relative; top: 250px;">Brief Introduction + Animation</test>
+    <div class="nav-wrapper">
+        <nav class="navigationBar">
+            <a href="#" class="navBar-item-hover"><span>Home</span></a>
+            <a href="#" class="navBar-item-hover"><span>About</span></a>
+            <a href="#" class="navBar-item-hover"><span>Contact</span></a>
+            <div class="cursor"></div>
+        </nav>
     </div>
+
+    <div class="section1" style="font-weight: 600; color: white; font-size: 40px; text-align: center;">
+        <div class="name-title">
+            Hello I'm Fadi.
+        </div>
+        <div class="name-title2">
+            A Software Engineering Student.
+        </div>
+    </div>
+
     <div class="section2">
-        <test2 style="font-size: 100px; position: relative; top: 150px; left: 40px;">Picture + Intro</test2>
+
+
     </div>
 
 
     <div class="section3">
         <div class="quote-container" id="quote-container">
             <!-- Quote -->
+            <titleQuotes>
+                <quoteGenerator>Q</quoteGenerator>
+                <quoteGenerator>U</quoteGenerator>
+                <quoteGenerator>O</quoteGenerator>
+                <quoteGenerator>T</quoteGenerator>
+                <quoteGenerator>E</quoteGenerator>
+                <quoteGenerator>S</quoteGenerator>
+            </titleQuotes>
             <div class="quote-text">
                 <span id="quote">What you are is what you have been. What you'll be is what you do now.</span>
             </div>

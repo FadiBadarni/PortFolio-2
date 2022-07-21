@@ -1,10 +1,22 @@
-body {
-    color: #fff;
-    font-size: 100pt;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 
+body {
+    color: #18111e;
+    font-size: 100pt;
+    cursor: none;
+}
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.5s ease;
+}
 .section1 {
-    background-color: #11181e;
+    background-color: #18111e;
     width: 75%;
     float: left;
     height: 100vh;
@@ -21,6 +33,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .section3 {
@@ -31,6 +44,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* cursor: default; */
 }
 
 .section4 {
@@ -73,12 +87,35 @@ body {
     box-sizing: border-box;
 }
 
+titleQuotes {
+    display: flex;
+    justify-content: center;
+}
+
+quoteGenerator {
+    display: flex;
+    float: left;
+    margin: 0.3rem;
+    font-weight: 600;
+    font-size: 3em;
+    font-family: 'Rubik Moonrocks', cursive;
+    -webkit-transition: color 1s;
+    transition: color 0.5s;
+}
+
+quoteGenerator:hover {
+    color: #a1a1a1;
+}
 
 .quote-text {
-
-    margin-top: 2.5em;
+    margin-top: 0.5em;
     font-size: 1.2em;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+span#quote span:hover {
+    background: rgb(221, 107, 107);
 }
 
 .quote-author {
@@ -90,3 +127,4 @@ body {
     position: relative;
 }
 
+.quote-author:before {}
