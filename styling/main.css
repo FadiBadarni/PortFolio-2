@@ -6,6 +6,11 @@ body {
     font-size: 100pt;
     cursor: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 .cursor {
     pointer-events: none;
     position: fixed;
@@ -15,28 +20,33 @@ body {
     mix-blend-mode: difference;
     transition: transform 0.5s ease;
 }
+
 .section1 {
     background-color: #18111e;
     width: 75%;
     float: left;
-    height: 100vh;
+    height: 93vh;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    text-align: center;
 }
 
 .section2 {
-    background-color: #f1c40f;
+    background-color: #18111e;
     width: 25%;
     float: left;
-    height: 70vh;
+    height: 93vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-.section3 {
+/* .section3 {
     background-color: hsl(0deg 31% 73% / 90%);
     width: 25%;
     float: left;
@@ -44,8 +54,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* cursor: default; */
-}
+    cursor: default; 
+} */
 
 .section4 {
     background-color: #f07bb2;
@@ -55,6 +65,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    cursor: default;
 }
 
 .section5 {
@@ -65,6 +77,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    cursor: default;
 }
 
 .section6 {
@@ -75,6 +89,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    cursor: default;
 }
 
 .section6-2 {
@@ -85,6 +101,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    cursor: default;
 }
 
 titleQuotes {
@@ -101,13 +119,15 @@ quoteGenerator {
     font-family: 'Rubik Moonrocks', cursive;
     -webkit-transition: color 1s;
     transition: color 0.5s;
+    color: #6836b8;
 }
 
 quoteGenerator:hover {
-    color: #a1a1a1;
+    color: #c0b8c4;
 }
 
 .quote-text {
+    color: #9b4de4;
     margin-top: 0.5em;
     font-size: 1.2em;
     text-align: center;
@@ -125,6 +145,10 @@ span#quote span:hover {
     font-weight: 600;
     font-style: italic;
     position: relative;
+    color: #b987cc;
 }
 
-.quote-author:before {}
+#quote-container {
+    position: relative;
+    top: 8%;
+}

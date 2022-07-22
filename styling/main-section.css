@@ -1,35 +1,60 @@
-.name-intro{}
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-.name-title {
-    width: 15ch;
-    animation: typing 3s steps(15), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 1em;
-    margin-top: 15rem;
-    margin-left: 2rem;
-  }
-  .name-title2 {
-    width: 31ch;
-    animation: typing 3s steps(31), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 1em;
-    margin-left: 8rem;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
+#name-title {
+    margin-left: 2%;
+    font-size: 7rem;
+    position: absolute;
+    top: 30%;
+    text-align: left;
+}
+#name-title::before{
+    content: '<legend>';
+    color: rgba(220, 160, 255, 0.452);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    margin-left: -2rem;
+    position: inherit;
+    top: -2.5rem;
+}
+#name-title::after{
+    content: '</legend>';
+    color: rgba(220, 160, 255, 0.452);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    position: inherit;
+    bottom: -2.5rem;
+    margin-left: -8.5rem;
+    float: left;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+}
+
+#phrase{
+    position: relative;
+    top: 55%;
+    font-size: 2.5rem;
+    right: 12%;
+}
+#phrase::before{
+    content: '<p1>';
+    color: rgba(220, 160, 255, 0.452);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    margin-left: -2rem;
+    position: inherit;
+    top: -2.5rem;
+}
+#phrase::after{
+    content: '</p1>';
+    color: rgba(220, 160, 255, 0.452);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    position: inherit;
+    bottom: -2.5rem;
+}
+.encircle a{
+    cursor: none;
+}

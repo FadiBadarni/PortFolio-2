@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling/main.css">
+    <link rel="stylesheet" href="styling/section2.css">
     <link rel="stylesheet" href="styling/navigationBar.css">
     <link rel="stylesheet" href="styling/main-section.css">
+    <link rel="stylesheet" href="styling/main-section2.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -27,31 +29,36 @@
         </nav>
     </div>
 
-    <div class="section1" style="font-weight: 600; color: white; font-size: 40px; text-align: center;">
-        <div class="name-title">
-            Hello I'm Fadi.
+    <div class="section1">
+
+        <div id='particles-js'>
+            <div id='name-title'></div>
+            <div id="phrase"></div>
         </div>
-        <div class="name-title2">
-            A Software Engineering Student.
+
+        <div class="encircle bounce animated">
+            <a href="#section4"><div class="arrow"></div></a>
+            
         </div>
+
     </div>
 
     <div class="section2">
-
-
-    </div>
-
-
-    <div class="section3">
+        <img id="personal-picture1" src="images/fadi.jpg" alt="">
         <div class="quote-container" id="quote-container">
             <!-- Quote -->
             <titleQuotes>
-                <quoteGenerator>Q</quoteGenerator>
-                <quoteGenerator>U</quoteGenerator>
-                <quoteGenerator>O</quoteGenerator>
-                <quoteGenerator>T</quoteGenerator>
-                <quoteGenerator>E</quoteGenerator>
+                <quoteGenerator>I</quoteGenerator>
+                <quoteGenerator>N</quoteGenerator>
                 <quoteGenerator>S</quoteGenerator>
+                <quoteGenerator>P</quoteGenerator>
+                <quoteGenerator>I</quoteGenerator>
+                <quoteGenerator>R</quoteGenerator>
+                <quoteGenerator>A</quoteGenerator>
+                <quoteGenerator>T</quoteGenerator>
+                <quoteGenerator>I</quoteGenerator>
+                <quoteGenerator>O</quoteGenerator>
+                <quoteGenerator>N</quoteGenerator>
             </titleQuotes>
             <div class="quote-text">
                 <span id="quote">What you are is what you have been. What you'll be is what you do now.</span>
@@ -64,7 +71,29 @@
     </div>
 
 
-    <div class="section4">
+    <!-- <div class="section3">
+        <div class="quote-container" id="quote-container">
+            
+            <titleQuotes>
+                <quoteGenerator>Q</quoteGenerator>
+                <quoteGenerator>U</quoteGenerator>
+                <quoteGenerator>O</quoteGenerator>
+                <quoteGenerator>T</quoteGenerator>
+                <quoteGenerator>E</quoteGenerator>
+                <quoteGenerator>S</quoteGenerator>
+            </titleQuotes>
+            <div class="quote-text">
+                <span id="quote">What you are is what you have been. What you'll be is what you do now.</span>
+            </div>
+            
+            <div class="quote-author">
+                <span id="author">Buddha</span>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="section4" id="section4">
         <test4 style="font-size: 70px; position: relative; top: 40%; left: 30px;">Experience?</test4>
     </div>
     <div class="section5">
@@ -86,7 +115,8 @@
 
 
 
-
+    <script src="assets/js/particles.js"></script>
+    <script src="particles-app.js"></script>
     <script src="app.js"></script>
 </body>
 

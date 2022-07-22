@@ -93,11 +93,33 @@ quoteEl.onmouseover = e => {
 
 })();
 
-// const nameTitle2 = document.querySelector('.name-title2');
-// nameTitle2.classList.remove(".name-title2");
-// nameTitle2.offsetWidth;
+var i = 0;
+var txt = 'Hey!, I`m Fadi. A Software Engineering Student.';
+var txt2 = 'According to my calculations the problem doesn`t exist.';
+var speed = 100;
+var firstLineMaxChars = 14
 
-// setTimeout(() => {
-//     nameTitle2.style.visibility = 'visible';
-//     element.classList.add(".name-title2");
-// }, 5000); 
+function typeWriter() {
+    if (i < txt.length) {
+        var char = txt.charAt(i)
+
+        if (i == firstLineMaxChars) {
+            char += '</br>'
+        }
+
+        document.getElementById("name-title").innerHTML += char;
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+typeWriter();
+var j = 0;
+function typeWriter2() {
+    if (j < txt2.length) {
+        var char2 = txt2.charAt(j)
+        document.getElementById("phrase").innerHTML += char2;
+        j++;
+        setTimeout(typeWriter2, speed);
+    }
+}
+typeWriter2();
