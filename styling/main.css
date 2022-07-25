@@ -68,6 +68,8 @@ html {
     box-sizing: border-box;
     position: relative;
     cursor: default;
+    
+    
 }
 
 .section5 {
@@ -83,10 +85,10 @@ html {
 }
 
 .section6 {
-    background-color: #4dcde4;
-    width: 50%;
+    background-color: #18111e;
+    width: 100%;
     float: left;
-    height: 70vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
