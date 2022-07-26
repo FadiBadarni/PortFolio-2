@@ -124,39 +124,70 @@ function typeWriter2() {
 }
 typeWriter2();
 
-$(function(){
+$(function () {
     $('.carousel-item').eq(0).addClass('active');
     var total = $('.carousel-item').length;
     var current = 0;
-    $('#moveRight').on('click', function(){
-      var next=current;
-      current= current+1;
-      setSlide(next, current);
+    $('#moveRight').on('click', function () {
+        var next = current;
+        current = current + 1;
+        setSlide(next, current);
     });
-    $('#moveLeft').on('click', function(){
-      var prev=current;
-      current = current- 1;
-      setSlide(prev, current);
+    $('#moveLeft').on('click', function () {
+        var prev = current;
+        current = current - 1;
+        setSlide(prev, current);
     });
-    function setSlide(prev, next){
-      var slide= current;
-      if(next>total-1){
-       slide=0;
-        current=0;
-      }
-      if(next<0){
-        slide=total - 1;
-        current=total - 1;
-      }
-             $('.carousel-item').eq(prev).removeClass('active');
-             $('.carousel-item').eq(slide).addClass('active');
-        setTimeout(function(){
-  
-        },800);
-      
-  
-      
-      console.log('current '+current);
-      console.log('prev '+prev);
+    function setSlide(prev, next) {
+        var slide = current;
+        if (next > total - 1) {
+            slide = 0;
+            current = 0;
+        }
+        if (next < 0) {
+            slide = total - 1;
+            current = total - 1;
+        }
+        $('.carousel-item').eq(prev).removeClass('active');
+        $('.carousel-item').eq(slide).addClass('active');
+        setTimeout(function () {
+
+        }, 800);
+
+
+
+        console.log('current ' + current);
+        console.log('prev ' + prev);
     }
-  });
+});
+
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "fadybd1@gmail.com",
+        Password: "31629B777EC33A826C474620AE3CFE6EF4C7",
+        To: 'fadybd1@gmail.com',
+        From: "fadybd1@gmail.com",
+        Subject: "New Contact Request",
+        Body: "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Message: " + document.getElementById("message").value
+    }).then(
+        message => alert(message)
+    );
+}
+

@@ -1,0 +1,259 @@
+*{
+  transition: all 0.3s ease-in-out;
+  
+}
+:root {
+  --primary-color: #010712;
+  --secondary-color: #818386;
+  --bg-color: #FCFDFD;
+  --button-color: #3B3636;
+  --h1-color: #3F444C;
+}
+
+[data-theme="dark"] {
+  --primary-color: #FCFDFD;
+  --secondary-color: #818386;
+  --bg-color: #010712;
+  --button-color: #818386;
+  --h1-color: #FCFDFD;
+}
+
+.contact-container {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  max-width:100%;
+  background: var(--bg-color);
+  position: relative;
+  top: 30%;
+}
+
+.left-col {
+  width: 45vw;
+  height: 100%;
+  background-image: url("https://i.ibb.co/B4mRzL9/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-col {
+  background: var(--bg-color);
+  width: 50vw;
+  height: 70vh;
+  padding: 5rem 3.5rem;
+}
+
+.contact-container h1,
+.contact-container label,
+.contact-container button,
+.contact-container .description {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.contact-container h1 {
+  color: var(--h1-color);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-container label,
+.contact-container .description {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.contact-container form {
+  width: 31.25rem;
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+.contact-container input,
+.contact-container textarea,
+.contact-container label {
+  width: 40vw;
+  display: block;
+}
+
+.contact-container placeholder,
+.contact-container input,
+.contact-container textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: var(--primary-color);
+}
+
+.contact-container input,
+.contact-container textarea {
+  color: var(--primary-color);
+  font-weight: 500;
+  background: var(--bg-color);
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.contact-container textarea {
+  resize: none;
+}
+
+.contact-container button {
+  text-transform: uppercase;
+  font-weight: 300;
+  background: var(--button-color);
+  color: var(--bg-color);
+  width: 10rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.contact-container input:hover,
+.contact-container textarea:hover,
+.contact-container button:hover {
+  opacity: 0.5;
+}
+
+.contact-container button:active {
+  opacity: 0.8;
+}
+
+/* Toggle Switch */
+
+.contact-container .theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+}
+
+.contact-container .description {
+  margin-left: 1.25rem;
+}
+
+.contact-container .theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.contact-container .theme-switch input {
+  display: none;
+}
+
+.contact-container .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.contact-container .slider:before {
+  background-color: #fff;
+  bottom: 0.25rem;
+  content: "";
+  width: 26px;
+  height: 26px;
+  left: 0.25rem;
+  position: absolute;
+  transition: .4s;
+}
+
+.contact-container input:checked+.slider {
+  background-color: var(--button-color);
+}
+
+.contact-container input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.contact-container .slider.round {
+  border-radius: 34px;
+}
+
+.contact-container .slider.round:before {
+  border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .contact-container .logo {
+    width: 8rem;
+  }
+
+  .contact-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea,
+  .contact-container button {
+    font-size: 0.65rem;
+  }
+
+  .contact-container .description {
+    font-size: 0.3rem;
+    margin-left: 0.4rem;
+  }
+
+  .contact-container button {
+    width: 7rem;
+  }
+
+  .theme-switch-wrapper {
+    width: 120px;
+  }
+
+  .theme-switch {
+    height: 28px;
+    width: 50px;
+  }
+
+  .theme-switch input {
+    display: none;
+  }
+
+  .slider:before {
+    background-color: #fff;
+    bottom: 0.25rem;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 0.25rem;
+    position: absolute;
+    transition: .4s;
+  }
+
+  input:checked+.slider:before {
+    transform: translateX(16px);
+  }
+
+  .slider.round {
+    border-radius: 15px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+}

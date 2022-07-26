@@ -93,19 +93,33 @@ html {
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    cursor: default;
+    cursor: none;
 }
-
-.section7 {
-    background-color: #4d69e4;
+.section6-2 {
+    background-color: #18111e;
     width: 100%;
     float: left;
-    height: 80vh;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    cursor: default;   
+    padding: 2rem;
+    
+}
+.section7 {
+    background: rgb(252, 253, 253);
+    background: linear-gradient(0deg, rgba(252, 253, 253, 1) 40%, rgba(24, 17, 30, 1) 96%, rgba(24, 17, 30, 1) 96%);
+    width: 100%;
+    float: left;
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
     cursor: default;
+
 }
 
 titleQuotes {
