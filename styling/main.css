@@ -68,8 +68,8 @@ html {
     box-sizing: border-box;
     position: relative;
     cursor: default;
-    
-    
+
+
 }
 
 .section5 {
@@ -85,7 +85,7 @@ html {
 }
 
 .section6 {
-    background-color: #18111e;
+    background-color: transparent;
     width: 100%;
     float: left;
     height: 100vh;
@@ -96,11 +96,11 @@ html {
     cursor: default;
 }
 
-.section6-2 {
+.section7 {
     background-color: #4d69e4;
-    width: 50%;
+    width: 100%;
     float: left;
-    height: 70vh;
+    height: 80vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
