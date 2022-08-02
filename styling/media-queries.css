@@ -1,0 +1,366 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cursor {
+        display: none;
+    }
+
+    nav {
+        overflow: visible;
+    }
+
+    .navigationBar a+a {
+        margin-left: 6rem;
+    }
+
+    .navigationBar a span {
+        font-size: 2rem;
+    }
+
+    .navBar-item-hover {
+        transition: all 0.3s ease;
+    }
+
+    .navBar-item-hover:hover~.cursor {
+        transform: translate(-10%, -10%) scale(2);
+    }
+
+    .section1 {
+        height: 35vh;
+        width: 100%;
+    }
+
+    .section2 {
+        display: none;
+    }
+
+    .section4 {
+        width: 100%;
+        float: left;
+        height: 50vh;
+    }
+
+    .section5 {
+        display: none;
+    }
+
+    .section6 {
+        height: 80vh;
+        margin-top: 50%;
+    }
+
+    .section6-2 {
+        margin-top: 30%;
+    }
+
+    .section7 {
+        height: 80vh !important;
+    }
+
+    #name-title {
+        font-size: calc(100vw / 22);
+        position: relative;
+        top: 15%;
+        text-align: left;
+    }
+
+    #name-title::before {
+        position: absolute;
+    }
+
+    #name-title::after {
+        position: absolute;
+        float: none;
+    }
+
+    #phrase {
+        position: relative;
+        top: 20%;
+        font-size: calc(100vw / 55);
+        right: 10%;
+    }
+
+    #mark {
+        display: unset;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 8rem;
+        position: relative;
+        left: 25%;
+        color: #48335a;
+    }
+
+    .wrapper {
+        display: flex;
+        top: 2vh;
+        justify-content: center;
+        margin-right: 0%;
+
+    }
+
+    .carousel-item__container .wrapper {
+        display: flex;
+        top: -4vh;
+        justify-content: center;
+        margin-right: 15%;
+    }
+
+    .about-title {
+        position: relative;
+        margin-left: 12rem;
+        margin-top: -7%;
+        font-size: calc(100vw / 15);
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .about-me {
+        width: 80%;
+        height: 100%;
+        margin-left: 2rem;
+        padding-top: 1rem;
+    }
+
+    typedtext2 {
+        color: rgb(191, 169, 206);
+        font-size: 0.8em;
+        display: flex;
+        margin-left: 3%;
+        margin-right: 2%;
+        margin-top: 2%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #image-container {
+        height: 90%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #personal-picture2 {
+        width: 30%;
+        margin-top: -15%;
+        right: 4rem;
+    }
+
+    .carousel {
+        display: flex;
+        width: 90%;
+        height: 80%;
+        margin-left: 5%;
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-item__info {
+        width: 100% !important;
+        height: 75%;
+        top: 5%;
+        position: absolute;
+    }
+
+    .carousel-item__image {
+        width: 100% !important;
+        height: 25%;
+        position: absolute;
+    }
+
+    .carousel-item__subtitle {
+        position: relative;
+        top: 5%;
+    }
+
+    .carousel-item__description {
+        position: relative;
+        bottom: 5%;
+    }
+
+    .carousel-item__container ul.wrapper li.icon.github {
+        position: relative;
+        margin-left: 60%;
+        margin-top: -12%;
+    }
+
+    .section7 {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .contact-container {
+        height: 60vh;
+    }
+
+    .left-col {
+        width: 45vw;
+        height: 100%;
+        background-image: url("https://i.ibb.co/b13Dbdg/bg2.jpg");
+    }
+
+    .contact-container .theme-switch-wrapper {
+        right: 0%;
+    }
+
+    .contact-container .description {
+        padding: 5%;
+        font-size: calc(100vw / 50);
+    }
+
+    .col-lg-4 {
+        height: 50%;
+        width: 50%;
+        margin-top: 10%;
+        margin-bottom: 0%;
+        justify-content: space-between;
+        float: left;
+    }
+
+    #cards .card {
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+    #cards .card .skill-picture img {
+        padding: 0.5rem;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    p.sub-text2 {
+        margin-left: 0%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+titleQuotes {
+    display: flex;
+    justify-content: left;
+}
+
+quoteGenerator {
+    display: flex;
+    float: left;
+    margin: 0.2vw;
+    font-weight: 600;
+    font-size: calc(100vw / 35);
+    font-family: 'Rubik Moonrocks', cursive;
+    -webkit-transition: color 1s;
+    transition: color 0.5s;
+    color: #6836b8;
+}
+
+quoteGenerator:hover {
+    color: #c0b8c4;
+}
+
+.quote-text {
+    color: #9b4de4;
+    margin-top: 0.5em;
+    font-size: 1.2vw;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#quote{
+    position: relative;
+    margin-right: 75%;
+}
+
+span#quote span:hover {
+    background: rgb(221, 107, 107);
+}
+
+.quote-author {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    color: #b987cc;
+    right: 65rem;
+}
+
+#quote-container {
+    position: relative;
+    top: 76%;
+    right: -2%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        display: inline-block;
+        list-style: none;
+        margin-top: 0%;
+        top: 3rem;
+        position: relative;
+        right: 0em;
+    }
+
+    .wrapper .icon {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    #image-container {
+        height: 35rem;
+        width: 35rem;
+        margin-top: 6rem;
+    }
+
+    #personal-picture2 {
+        width: 15rem;
+        border-radius: 50% 50% 50% 50%;
+        margin-top: -10rem;
+        position: relative;
+        right: 8rem;
+        border: 0.4rem solid rgba(255, 255, 255, 0.3);
+    }
+
+    .about-me-2 {
+        width: 100rem;
+        height: 40rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

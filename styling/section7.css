@@ -21,7 +21,7 @@
 .contact-container {
   display: flex;
   width: 100vw;
-  height: 70vh;
+  height: 100%;
   max-width:100%;
   background: var(--bg-color);
   position: relative;
@@ -29,7 +29,7 @@
 }
 
 .left-col {
-  width: 45vw;
+  width: 40vw;
   height: 100%;
   background-image: url("https://i.ibb.co/B4mRzL9/image.png");
   background-size: cover;
@@ -38,8 +38,8 @@
 
 .right-col {
   background: var(--bg-color);
-  width: 50vw;
-  height: 70vh;
+  width: 60vw;
+  height: 100%;
   padding: 5rem 3.5rem;
 }
 
@@ -130,16 +130,20 @@
   opacity: 0.8;
 }
 
+#contact-form label{
+  
+}
+
 /* Toggle Switch */
 
 .contact-container .theme-switch-wrapper {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 160px;
+  width: 20rem;
   position: absolute;
   top: 0.5rem;
-  right: 0;
+  left: 0rem;
 }
 
 .contact-container .description {

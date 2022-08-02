@@ -14,34 +14,32 @@
     <link rel="stylesheet" href="styling/section6.css">
     <link rel="stylesheet" href="styling/section6-2.css">
     <link rel="stylesheet" href="styling/section7.css">
+    <link rel="stylesheet" href="styling/media-queries.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
-        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
 
 <body>
     <div class="nav-wrapper">
         <nav class="navigationBar">
-            <a href="#" class="navBar-item-hover"><span>Home</span></a>
-            <a href="#" class="navBar-item-hover"><span>About</span></a>
-            <a href="#" class="navBar-item-hover"><span>Contact</span></a>
+            <a href="#section1" class="navBar-item-hover"><span>Home</span></a>
+            <a href="#section4" class="navBar-item-hover"><span>About</span></a>
+            <a href="#contact-area" class="navBar-item-hover"><span>Contact</span></a>
             <div class="cursor"></div>
         </nav>
     </div>
 
-    <div class="section1">
+    <div class="section1" id="section1">
 
         <div id='particles-js'>
             <div id='name-title'></div>
@@ -51,9 +49,7 @@
     </div>
 
     <div class="section2">
-        <img id="personal-picture1" src="images/fadi.jpg" alt="">
         <div class="quote-container" id="quote-container">
-            <!-- Quote -->
             <titleQuotes>
                 <quoteGenerator>I</quoteGenerator>
                 <quoteGenerator>N</quoteGenerator>
@@ -70,7 +66,6 @@
             <div class="quote-text">
                 <span id="quote">What you are is what you have been. What you'll be is what you do now.</span>
             </div>
-            <!-- Author -->
             <div class="quote-author">
                 <span id="author">Buddha</span>
             </div>
@@ -78,25 +73,40 @@
     </div>
 
 
-
     <div class="section4" id="section4">
         <div id="particles-js2">
             <div id="image-container">
-                <div class="about-title">About Me.</div>
-                <img id="personal-picture2" src="images/fadi.jpg" alt="">
+                <div class="about-title" id="about-title">About Me</div>
+                <img id="personal-picture2" src="images/brain.jpg" alt="">
+                <typedtext2>
+                    A second year software engineering student with a huge passion for learning, a good team player and
+                    a self-motivated person.
+                    Always on the look for new challenges and acquiring useful skills to help me boost my knowledge in
+                    different aspects of the field, determination and hardwork are key aspects in defining who i am.
+                    <br>
+                    Always loved to tackle complex problems, and a great problem solver so to speak. A person with an
+                    innovative tech mind , successful working in both team and self-directed settings. Ability to work
+                    independently and to learn quickly.
+                </typedtext2>
                 <ul class="wrapper">
-                    <li class="icon facebook">
-                        <span class="tooltip">Facebook</span>
-                        <span><i class="fab fa-facebook-f"></i></span>
-                    </li>
-                    <li class="icon LinkedIn">
-                        <span class="tooltip">LinkedIn</span>
-                        <span><i class="fab fa-linkedin-in"></i></span>
-                    </li>
-                    <li class="icon github">
-                        <span class="tooltip">Github</span>
-                        <span><i class="fab fa-github"></i></span>
-                    </li>
+                    <a href="https://www.facebook.com/fadi.badarnii">
+                        <li class="icon facebook" target="_blank">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fadi-badarni-235030236/">
+                        <li class="icon LinkedIn">
+                            <span class="tooltip">LinkedIn</span>
+                            <span><i class="fab fa-linkedin-in"></i></span>
+                        </li>
+                    </a>
+                    <a href="https://github.com/FadiBadarni">
+                        <li class="icon github">
+                            <span class="tooltip">Github</span>
+                            <span><i class="fab fa-github"></i></span>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -107,9 +117,16 @@
 
         <div id="particles-js3">
             <div class="about-me-2">
-                <about-paragraph id="typedtext">
-
-                </about-paragraph>
+                <div id="typedtext">
+                    A second year software engineering student with a huge passion for learning, a good team player and
+                    a self-motivated person.
+                    Always on the look for new challenges and acquiring useful skills to help me boost my knowledge in
+                    different aspects of the field, determination and hardwork are key aspects in defining who i am.
+                    <br>
+                    Always loved to tackle complex problems, and a great problem solver so to speak. A person with an
+                    innovative tech mind , successful working in both team and self-directed settings. Ability to work
+                    independently and to learn quickly.
+                </div>
 
             </div>
 
@@ -124,7 +141,7 @@
 
         <div class="carousel">
 
-            <div class="carousel__nav">
+            <div class="carousel__nav ">
                 <span id="moveLeft" class="carousel__arrow">
                     <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
@@ -142,18 +159,20 @@
                     <div class="carousel-item__container">
                         <h2 class="carousel-item__subtitle">Key Logging Application</h2>
                         <h1 class="carousel-item__title">Key Logger</h1>
+                        <br>
                         <p class="carousel-item__description">Built with Python. a program that records every
                             keystroke
                             made by
                             the user and takes screenshots at given times and sends email with recorded data.</p>
                         <a href="#" class="carousel-item__btn">Learn More ⟶</a>
-
-                        <ul class="wrapper">
-                            <li class="icon github">
-                                <span class="tooltip">Github</span>
-                                <span><i class="fab fa-github"></i></span>
-                            </li>
-                        </ul>
+                        <a href="https://github.com/FadiBadarni/KeyLogger">
+                            <ul class="wrapper">
+                                <li class="icon github">
+                                    <span class="tooltip">Github</span>
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                            </ul>
+                        </a>
                         <p class="carousel-item__description">Python, Tkinter, Encryption</p>
                     </div>
                 </div>
@@ -164,18 +183,21 @@
                     <div class="carousel-item__container">
                         <h2 class="carousel-item__subtitle">Medical Diagnosis Application</h2>
                         <h1 class="carousel-item__title" style="font-size: 2.6rem;">Medical Diagnosis</h1>
+                        <br>
                         <p class="carousel-item__description">A System that provides complete medical diagnosis
                             based on
                             inserted blood test
                             levels made with Java and designed with JavaFX</p>
                         <a href="#" class="carousel-item__btn">Learn More ⟶</a>
 
-                        <ul class="wrapper">
-                            <li class="icon github">
-                                <span class="tooltip">Github</span>
-                                <span><i class="fab fa-github"></i></span>
-                            </li>
-                        </ul>
+                        <a href="https://github.com/FadiBadarni/Medical-Diagnosis">
+                            <ul class="wrapper">
+                                <li class="icon github">
+                                    <span class="tooltip">Github</span>
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                            </ul>
+                        </a>
                         <p class="carousel-item__description">Java, JavaFX, SceneBuilder</p>
                     </div>
                 </div>
@@ -186,18 +208,21 @@
                     <div class="carousel-item__container">
                         <h2 class="carousel-item__subtitle">Password Manager Application </h2>
                         <h1 class="carousel-item__title" style="font-size: 2.6rem;">Password Manager</h1>
+                        <br>
                         <p class="carousel-item__description">Password Manager created mainly with java and javaFX
                             that
                             uses double
                             encryption to store and save passwords in a SQL manipulated database.</p>
                         <a href="#" class="carousel-item__btn">Learn More ⟶</a>
 
-                        <ul class="wrapper">
-                            <li class="icon github">
-                                <span class="tooltip">Github</span>
-                                <span><i class="fab fa-github"></i></span>
-                            </li>
-                        </ul>
+                        <a href="https://github.com/FadiBadarni/Password-Manager">
+                            <ul class="wrapper">
+                                <li class="icon github">
+                                    <span class="tooltip">Github</span>
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                            </ul>
+                        </a>
                         <p class="carousel-item__description">Java, JavaFX, SceneBuilder, MySQL</p>
                     </div>
                 </div>
@@ -209,16 +234,19 @@
                     <div class="carousel-item__container">
                         <h2 class="carousel-item__subtitle">Vaccination-Website</h2>
                         <h1 class="carousel-item__title" style="font-size: 2.5rem;">Vaccination System</h1>
+                        <br>
                         <p class="carousel-item__description">A Vaccination-Website created to manage appointments,
                             created with Python and Django</p>
                         <a href="#" class="carousel-item__btn">Learn More ⟶</a>
 
-                        <ul class="wrapper">
-                            <li class="icon github">
-                                <span class="tooltip">Github</span>
-                                <span><i class="fab fa-github"></i></span>
-                            </li>
-                        </ul>
+                        <a href="https://github.com/FadiBadarni/Vaccination-Website">
+                            <ul class="wrapper">
+                                <li class="icon github">
+                                    <span class="tooltip">Github</span>
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                            </ul>
+                        </a>
                         <p class="carousel-item__description">Python, HTML, CSS, Django</p>
                     </div>
                 </div>
@@ -229,18 +257,21 @@
                 <div class="carousel-item__info">
                     <div class="carousel-item__container">
                         <h2 class="carousel-item__subtitle">Personal Portfolio</h2>
+                        <br>
                         <h1 class="carousel-item__title">Portfolio</h1>
                         <p class="carousel-item__description">Personal portfolio completely created by me to provide
                             information about who
                             am i and what i do and present my skills .</p>
                         <a href="#" class="carousel-item__btn">Learn More ⟶</a>
 
-                        <ul class="wrapper">
-                            <li class="icon github">
-                                <span class="tooltip">Github</span>
-                                <span><i class="fab fa-github"></i></span>
-                            </li>
-                        </ul>
+                        <a href="https://github.com/FadiBadarni/portfolio">
+                            <ul class="wrapper">
+                                <li class="icon github">
+                                    <span class="tooltip">Github</span>
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                            </ul>
+                        </a>
                         <p class="carousel-item__description">HTML, CSS, JavaScript</p>
                     </div>
                 </div>
@@ -258,9 +289,9 @@
                 <div class="row pb-4">
                     <div class="col-12 text-center">
                         <div class="skills-title">Technical Skills</div>
+
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4 pt-5">
                         <div class="card shadow-sm border-0">
@@ -270,8 +301,12 @@
                                         class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="skill-content">
-                                    <h5 class="text-capitalize user-name">Python</h5>
-                                    <p class="sub-text">Programming Language</p>
+                                    <h5>Python</h5>
+                                    <p class="sub-text2">
+                                        <tooltip
+                                            tooltip="Good knowledge of the language fundementals .Infrequent reference to external sources. Posseses an adequate understanding of what the code is doing"
+                                            flow="down">Language Proficiency - <b>Proficient</b></tooltip>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -280,12 +315,16 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                                        class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="skill-content">
-                                    <h5 class="text-capitalize user-name">CSS</h5>
-                                    <p class="sub-text">Programming Language</p>
+                                    <h5>CSS</h5>
+                                    <p class="sub-text2">
+                                        <tooltip
+                                            tooltip="Good knowledge of the language fundementals .Infrequent reference to external sources. Posseses an adequate understanding of what the code is doing"
+                                            flow="down">Language Proficiency - <b>Proficient</b></tooltip>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -294,12 +333,15 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" />
                                 </div>
                                 <div class="skill-content">
-                                    <h5 class="text-capitalize user-name">Java</h5>
-                                    <p class="sub-text">Programming Language</p>
+                                    <h5>Java</h5>
+                                    <p class="sub-text2">
+                                        <tooltip
+                                            tooltip="Good knowledge of the language fundementals .Infrequent reference to external sources. Posseses an adequate understanding of what the code is doing"
+                                            flow="down">Language Proficiency - <b>Proficient</b></tooltip>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -308,12 +350,16 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg">
                                 </div>
                                 <div class="skill-content">
-                                    <h5 class="text-capitalize user-name">JavaScript</h5>
-                                    <p class="sub-text">Programming Language</p>
+                                    <h5>JavaScript</h5>
+                                    <p class="sub-text2">
+                                        <tooltip
+                                            tooltip="Good knowledge of the language fundementals .Infrequent reference to external sources. Posseses an adequate understanding of what the code is doing"
+                                            flow="down">Language Proficiency - <b>Proficient</b></tooltip>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -322,12 +368,16 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
                                 </div>
                                 <div class="skill-content">
-                                    <h5 class="text-capitalize user-name">HTML</h5>
-                                    <p class="sub-text">Programming Language</p>
+                                    <h5>HTML</h5>
+                                    <p class="sub-text2">
+                                        <tooltip
+                                            tooltip="Good knowledge of the language fundementals .Infrequent reference to external sources. Posseses an adequate understanding of what the code is doing"
+                                            flow="down">Language Proficiency - <b>Proficient</b></tooltip>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -336,12 +386,16 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" />
                                 </div>
                                 <div class="skill-content">
-                                    <h5 class="text-capitalize user-name">C++</h5>
-                                    <p class="sub-text">Programming Language</p>
+                                    <h5>C++</h5>
+                                    <p class="sub-text2">
+                                        <tooltip
+                                            tooltip="Good knowledge of the language fundementals .Infrequent reference to external sources. Posseses an adequate understanding of what the code is doing"
+                                            flow="down">Language Proficiency - <b>Proficient</b></tooltip>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -350,12 +404,15 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
                                 </div>
                                 <div class="skill-content">
-                                    <h5 class="text-capitalize user-name">C</h5>
-                                    <p class="sub-text">Programming Language</p>
+                                    <h5>C</h5>
+                                    <p class="sub-text2">
+                                        <tooltip
+                                            tooltip="Good knowledge of the language fundementals .Infrequent reference to external sources. Posseses an adequate understanding of what the code is doing"
+                                            flow="down">Language Proficiency - <b>Proficient</b></tooltip>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -377,8 +434,7 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://i.ibb.co/DgnNZpX/c.jpg" />
                                 </div>
                                 <div class="skill-content">
                                     <h5>Communication</h5>
@@ -394,13 +450,12 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://i.ibb.co/xz6XqFD/SM.jpg" />
                                 </div>
                                 <div class="skill-content">
                                     <h5>Self-Motivated</h5>
                                     <p class="sub-text">Always learning and enhancing my skills through precision
-                                        and dedication. Prepared for the future and ready for challenges.
+                                        and dedication. Prepared for the future and on the look for worthy challenges.
                                     </p>
                                 </div>
                             </div>
@@ -410,15 +465,14 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://i.ibb.co/crJNwWd/img66.jpg" />
                                 </div>
                                 <div class="skill-content">
                                     <h5>MultiTasking</h5>
                                     <p class="sub-text">acquired a great mindset which allows me to be able to
                                         interleave one task with another
                                         and gave me the Ability to handle multiple tasks and work under pressure.
-                                        Follows a self made mechanism in prioritisation.
+
                                     </p>
                                 </div>
                             </div>
@@ -428,11 +482,10 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://i.ibb.co/hftw6Qn/O.jpg" />
                                 </div>
                                 <div class="skill-content">
-                                    <h5>Organization</h5>
+                                    <h5>Organized</h5>
                                     <p class="sub-text">Substantial ability at understanding requirements and project
                                         scope to prioritise key
                                         tasks. A Detail-oriented person with a good capacity at organizing worksloads.
@@ -445,8 +498,7 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://i.ibb.co/MgDfJ9R/DM.jpg" />
                                 </div>
                                 <div class="skill-content">
                                     <h5>Decision-Making</h5>
@@ -462,8 +514,7 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://i.ibb.co/Hn4cH9K/PS.jpg" />
                                 </div>
                                 <div class="skill-content">
                                     <h5>Problem-Solving</h5>
@@ -479,30 +530,13 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
+                                    <img src="https://i.ibb.co/1bHysvD/te.jpg" />
                                 </div>
                                 <div class="skill-content">
                                     <h5>Attention To Detail</h5>
                                     <p class="sub-text">Devoted to paying strong attention to detail, always trying to
                                         keep my code easy and readable.
                                         Invariably curious and eager to improve.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 pt-5">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
-                                        height="130" width="130" />
-                                </div>
-                                <div class="skill-content">
-                                    <h5>Self-Motivated</h5>
-                                    <p class="sub-text">Always learning and enhancing my skills through precision
-                                        and dedication. Prepared for the future and on the look for worthy challenges.
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +561,7 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
+                                    <img src="https://i.ibb.co/Q8bRkVN/english.jpg" class="shadow-sm rounded-circle"
                                         height="130" width="130" />
                                 </div>
                                 <div class="skill-content">
@@ -541,7 +575,7 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
+                                    <img src="https://i.ibb.co/hLvbwXd/hebrew.jpg" class="shadow-sm rounded-circle"
                                         height="130" width="130" />
                                 </div>
                                 <div class="skill-content">
@@ -555,7 +589,7 @@
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="skill-picture">
-                                    <img src="https://i.ibb.co/vHjfg79/image.png" class="shadow-sm rounded-circle"
+                                    <img src="https://i.ibb.co/7XbzJVn/arabic.jpg" class="shadow-sm rounded-circle"
                                         height="130" width="130" />
                                 </div>
                                 <div class="skill-content">
@@ -574,27 +608,20 @@
 
 
 
+
     </div>
 
-    <div class="section7">
+    <div class="section7" id="contact-area">
 
         <div class="contact-container">
-            <div class="left-col"></div>
+
 
             <div class="right-col">
-
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                    <div class="description">Dark Mode</div>
-                </div>
 
                 <h1>get in touch</h1>
 
                 <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
-                    <label for="name">Full name</label>
+                    <label class="contact-name" for="name">Full name</label>
                     <input type="text" id="name" name="name" placeholder="Your Full Name" required>
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" placeholder="Your Email Address" required>
@@ -604,6 +631,14 @@
                 </form>
 
             </div>
+            <div class="theme-switch-wrapper">
+                <div class="description" style="font-size: 1rem; margin-right:1%;"><b>Dark Mode</b></div>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <div class="left-col"></div>
         </div>
 
     </div>

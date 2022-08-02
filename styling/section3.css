@@ -10,8 +10,7 @@
 
 .about-me {
   width: 80%;
-  height: 10vh;
-  
+  height: 50%;
   border-radius: 20%;
   margin-left: 2rem;
   padding-top: 1rem;
@@ -25,12 +24,11 @@
 #particles-js4 {
   position: absolute;
   width: 100%;
-  height: 100vh;
-
+  height: 110vh;
 }
 .about-me-2 {
   width: 80%;
-  height: 60vh;
+  height: 70%;
   border-radius: 5%;
   position: absolute;
   top: 20%;
@@ -53,26 +51,23 @@
 
 .about-title {
   color: rgb(153, 147, 158);
-  position: absolute;
-  margin-left: 22.5rem;
-  font-size: 7rem;
-  width: 110%;
+  position: relative;
+  left: 3rem;
+  font-size: 6rem;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 #typedtext {
-  display: none;
-}
-
-about-paragraph {
-  color: rgb(157, 90, 196);
-  font-size: 2.5rem;
+  color: rgb(191, 169, 206);
+  font-size: 1.8em;
   display: inline-block;
   margin-left: 3%;
   margin-right: 2%;
   margin-top: 2%;
   font-family: 'Poppins', sans-serif;
-
+}
+typedtext2 {
+  display: none;
 }
 
 #image-container {
@@ -85,22 +80,22 @@ about-paragraph {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin-left: 20%;
+  margin-top: 25%;
   border-bottom-color: rgb(185, 80, 255);
   border-bottom-width: 0.3rem;
-  
-}
-
-#image-container:hover {
-  cursor: default;
 }
 
 #personal-picture2 {
-  width: 70%;
+  width: 50%;
   border-radius: 50% 50% 50% 50%;
   margin-top: 6rem;
   position: relative;
   right: 8rem;
-  border: 0.4rem solid rgb(88, 61, 112);
+  border: 0.4rem solid rgba(255, 255, 255, 0.3);
+}
+
+#image-container:hover {
+  cursor: default;
 }
 
 .wrapper {
@@ -115,11 +110,11 @@ about-paragraph {
   position: relative;
   background: #a891b8;
   border-radius: 50%;
-  padding: 15px;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
+  padding: 1rem;
+  margin: 1.625rem;
+  width: 4.125rem;
+  height: 4.125rem;
+  font-size: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +127,7 @@ about-paragraph {
 .wrapper .tooltip {
   position: absolute;
   top: 0;
-  font-size: 14px;
+  font-size: 1rem;
   background: #ffffff;
   color: #ffffff;
   padding: 5px 8px;

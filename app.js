@@ -95,7 +95,7 @@ quoteEl.onmouseover = e => {
 
 var i = 0;
 var txt = 'Hey!, I`m Fadi. A Software Engineering Student.';
-var txt2 = 'According to my calculations the problem doesn`t exist.';
+var txt2 = 'enthusiastic computer addict with a passion for learning new technologies.';
 var speed = 100;
 var firstLineMaxChars = 14
 

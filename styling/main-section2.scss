@@ -2,16 +2,15 @@
     background-color: #514061;
     border-radius: 5%;
     p.sub-text{
-        color: rgb(198, 169, 255);
+        color: rgb(215, 197, 252);
     }
     .skill-picture img {
         filter: drop-shadow(-0.6rem -0.5rem 0.6rem rgb(162, 0, 255));
         filter: sepia(0%) saturate(0%) brightness(100%) hue-rotate(0%);
-    
+    }
+    .skill-content h5 {
+        color: #d3c8dd;
+        
     }
 }
 
-p.sub-text:hover {
-
-
-}
