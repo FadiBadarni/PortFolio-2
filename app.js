@@ -187,6 +187,12 @@ function sendEmail() {
             + "<br> Email: " + document.getElementById("email").value
             + "<br> Message: " + document.getElementById("message").value
     }).then(
-        message => alert(message)
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your request was sent!',
+            showConfirmButton: false,
+            timer: 1500
+          })
     );
 }
