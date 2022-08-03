@@ -18,7 +18,6 @@
     border-radius: 3%;
     -webkit-box-shadow: -0.0625rem 0.125rem 2.3rem 0.8rem rgba(174, 0, 255, 0.63);
     box-shadow: -0.625rem 0.125rem 2.3rem 0.8rem rgba(105, 80, 112, 0.63);
-    cursor: default;
 }
 
 .carousel-item {
@@ -50,7 +49,7 @@
     order: 1;
     left: 0;
     margin: auto;
-    padding: 0 40px;
+    padding: 0 3rem;
     width: 40%;
 }
 
@@ -78,7 +77,9 @@
 .carousel-item__subtitle {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 3px;
-    font-size: 10px;
+    font-size: 1rem;
+    position: relative;
+    top: 1rem;
     text-transform: uppercase;
     margin: 0;
     color: #c2a3e6;
@@ -186,7 +187,6 @@
 }
 
 .carousel__arrow {
-    cursor: pointer;
     display: inline-block;
     padding: 11px 15px;
     position: relative;
